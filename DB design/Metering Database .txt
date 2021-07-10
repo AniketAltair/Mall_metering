@@ -1,0 +1,77 @@
+﻿
+Admin Table
+    - username      :username for admin char length 255 (also password/email)
+    - id            : id ( we have only one admin as of but later we can add more admin)
+    - password      : password for admin char length 255 
+    - email         : email for admin char length 255
+    - profile_pic   : profile_pic for admin , it will be url targeting the profile image (char length 1024)
+    - join_date     : DateTime field time of registering admin
+
+
+
+
+Supervisor Table
+    - username     : username for admin char length 255 (also password/email) 
+    - id            : id for supervisor (type int length 13)
+    - password      : password char length 255
+    - email         : email
+    - profile_pic   : url , char length 1024
+    - mobile_no
+    - time_stamp
+    - status
+
+
+
+
+Customer Table
+    - username      : username for admin char length 255 (also password/email)
+    - id            : int (13)- 
+    - password      :  char length 255
+    - email         : char length 255
+    - mobile_no     : mobile number for customer char length (20)
+    - Profile_pic   : url
+    - status(v/uv)  : status  weather user details are verified or not ( type boolean , true- verified ,false - not verified)
+    - time_stamp    : time stamp of adding customer
+    - address       : address of customer 
+    - subscription  : subscription char length 1 , keys : 1 => one month subscription,2 => three month subscription.3 => six month subscription 
+                                                          
+
+Connection Table
+    - meter_id      : int -13 
+    - connection_id : int -13
+    - customer_id   : int -13
+    - threshold     : current threshold for the connection
+
+
+Meter Table
+    - meter_id      : meter_id
+    - meter_name    : meter name 
+    - time_stamp    : time stamp of registering meter
+    - meter_url     : the URL of the meter
+    - linked        : is meter linked to a customer or not (type boolean  : true - meter is linked , false - meter is not linked)
+
+
+Meter Reading Table
+    - reading_id    : id for perticular reading_value
+    - meter_id      : corresponding meter id 
+    - reading_value : reading_value
+    - time_stamp    : time stamp of reading 
+
+
+================================================================ Database freezed upto this    
+
+Constants Table
+    - constant_id 
+    - constant_name 
+    - constant_description
+    - constant_value
+    - last_change 
+
+
+Billing Table
+    - bill_id
+    - user_id
+    - time_stamp
+    - starting_value
+    - ending _value
+    - paid/unpaid
