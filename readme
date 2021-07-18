@@ -1,6 +1,5 @@
-# Frontend of Mall Metering Project
-This document contains all the instructions to build the project and description about the sections.
-## Info. 
+
+##Info. 
 This is a application which can be used to monitor the electricity usage by households .It has three sections 
  1. Superadmin 
  2. Supervisor
